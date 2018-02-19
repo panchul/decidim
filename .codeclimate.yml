@@ -98,7 +98,11 @@ plugins:
     enabled: true
 
     exclude_patterns:
-      - docs/*
+      - docs/advanced/*
+      - docs/customization/*
+      - docs/services/*
+      - docs/add_authenticable_action.md
+      - docs/adding_fixtures_aka_dummy_content.md
       - .github/*
       - CHANGELOG.md
 
