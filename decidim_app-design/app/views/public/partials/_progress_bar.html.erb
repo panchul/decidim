@@ -2,7 +2,7 @@
 <% total ||= 100 %>
 <% percent = (progress.to_f/total) * 100 %>
 <% vertical ||= false %>
-<div class="progress__bar<%= (vertical) ? ' progress__bar--vertical' : '' %>">
+<div class="progress__bar<%= (vertical) ? " progress__bar--vertical" : "" %>">
   <div class="progress__bar__title">
     <span class="progress__bar__number"><%= progress %></span>/<%= total %>
     <span class="progress__bar__text">Apoyos</span>
