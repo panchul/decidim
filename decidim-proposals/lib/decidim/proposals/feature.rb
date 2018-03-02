@@ -13,9 +13,12 @@ Decidim.register_feature(:proposals) do |feature|
 
   feature.actions = %w(endorse vote create withdraw)
 
+  feature.query_type = "Decidim::Proposals::ProposalsType"
+
   feature.settings(:global) do |settings|
     settings.attribute :vote_limit, type: :integer, default: 0
     settings.attribute :proposal_limit, type: :integer, default: 0
+    settings.attribute :proposal_length, type: :integer, default: 500
     settings.attribute :proposal_edit_before_minutes, type: :integer, default: 5
     settings.attribute :maximum_votes_per_proposal, type: :integer, default: 0
     settings.attribute :can_accumulate_supports_beyond_threshold, type: :boolean, default: false
